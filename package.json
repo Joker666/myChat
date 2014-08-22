@@ -1,0 +1,15 @@
+{
+  "name": "myChat",
+  "version": "0.0.0",
+  "description": "simple chat application with node express angularjs and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasan Rafi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.8.5",
+    "jade": "^1.5.0"
+  }
+}
