@@ -1,0 +1,14 @@
+{
+  "name": "myChat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Joker666/myChat",
+  "authors": [
+    "Hasan Rafi <mr.k779@outlook.com>"
+  ],
+  "description": "chat application with node express angular socket",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "moment": "~2.8.2"
+  }
+}

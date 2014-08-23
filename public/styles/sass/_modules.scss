@@ -1,0 +1,147 @@
+.page{
+    @include page();
+}
+.page-chooseUsername{
+    background: none repeat scroll 0 0 $softgreen;
+    .dark-header{
+        margin: 0 auto;
+    }
+    h1{
+        @include header1();
+        color: $darkgreen;
+        text-align: center;
+        padding-top: 6%
+    }
+
+    #ql{
+        text-align: center;
+        @include span(isolate 12 at 7);
+        height: 10%;
+        background: $green;
+        color: rgba(0,0,0,0.8);
+        border: none;
+        font-size: 3em;
+        padding: 1%;
+        margin-top: 1%;
+    }
+}
+.dark-header{
+    height: 25%;
+    background: $green;
+}
+.rooms-page{
+    background: none repeat scroll 0 0 ghostwhite;
+    .room-header{
+        background: darken(ghostwhite, 5%);
+        border-bottom: 3px solid $green;
+        h1{
+            @include header1();
+            @include span(10);
+            @include pre(3%);
+            padding: 2%;
+            span{
+                color: $green;
+            }
+        }
+        h2{
+            color: $softgreen;
+            @include header2();
+            padding: 4% 2% 2% 2%;
+        }
+    }
+    section.rooms{
+        @include container(100%);
+        ul{
+            @include span(isolate 6 at 10);
+            h2{
+                color: $softgreen;
+                @include header2();
+                padding: 6%;
+                text-align: center;
+            }
+            //width: span(7);
+            //margin: 0 auto;
+
+            div{
+                background: lightgreen;
+                padding: 6%;
+                @include border-radii(35px);
+                a{
+                    li{
+                        color: darkgreen;
+                        @include para();
+                        span{
+                            @include span(last 3);
+                        }
+                    }
+                }
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                -ms-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+            .active{
+                background: #000000;
+                li {
+                    COLOR: lightgreen;
+                }
+            }
+        }
+    }
+    .get-to-left{
+        -webkit-transform: translateX(-125%);
+        -moz-transform: translateX(-125%);
+        transform: translateX(-125%);
+    }
+    .get-to-left-add, .get-to-left-remove{
+        -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s;
+        -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s;
+        -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s;
+        transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s;
+    }
+    .chat-window{
+        //opacity: 0;
+        @include span(isolate 13 at 10);
+        height: 550px;
+        h2{
+            color: $softgreen;
+            @include header2();
+            padding: 2%;
+            text-align: center;
+        }
+        .message-area{
+            border: 2px dashed $green;
+            height: 75%;
+        }
+        .input-box{
+            border: 2px dashed forestgreen;
+            border-top: none;
+            height: 12%;
+            input{
+                background: transparent;
+                border: none;
+                font-size: 2em;
+                padding: 1%;
+                width: 80%;
+            }
+            button{
+                border: none;
+                @include border-radii(50%);
+                width: 19%;
+                font-size: 2em;
+                height: 82%;
+                cursor: pointer;
+                background: $softgreen;
+                -webkit-transition: all 0.1s linear;
+                -moz-transition: all 0.1s linear;
+                -ms-transition: all 0.1s linear;
+                -o-transition: all 0.1s linear;
+                transition: all 0.1s linear;
+                &:hover{
+                    background: lightseagreen;
+                }
+            }
+        }
+    }
+}
