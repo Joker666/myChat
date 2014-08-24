@@ -1,7 +1,8 @@
 var chatApp = angular.module('chatApp', [
     'ui.router',
     'ngAnimate',
-    'ui.utils'
+    'ui.utils',
+    'btford.socket-io'
 ]);
 
 chatApp.config(function($stateProvider, $urlRouterProvider){

@@ -12,4 +12,6 @@ require('./server/config/express')(app, config);
 
 require('./server/config/routes')(app);
 
+require('./server/config/sockets')(app, io);
+
 console.log('Listening on port ' + config.port + '...');

@@ -1,2 +1,3 @@
-angular.module('chatApp').controller('ChatController', function ($scope, $state, $stateParams) {
+angular.module('chatApp').controller('ChatController', function ($scope, mySocket) {
+    mySocket.userLogged();
 });

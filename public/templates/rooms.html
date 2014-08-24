@@ -1,12 +1,12 @@
 <div class="room-header">
-    <h1>Hey, <span>voila</span></h1>
+    <h1>Hey, <span>{{ username }}</span></h1>
     <h2>Join a room and start chatting</h2>
 </div>
 <section class="rooms">
     <ul ng-class="rooms.autoLeft ? 'get-to-left' : ''">
         <h2>Rooms List</h2>
         <div ng-repeat="room in rooms" ui-sref-active="active">
-            <a ui-sref="rooms.chat({ roomId: room.id })" ng-click="(rooms.left())">
+            <a ui-sref="rooms.chat({ roomId: room.id })" ng-click="(rooms.left(room.name))">
                 <li>{{ room.name }}-
                     <span>{{ room.numberOfUsers}}</span>
                 </li>
